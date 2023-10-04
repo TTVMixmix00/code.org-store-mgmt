@@ -11,6 +11,12 @@ public final class Escapes {
     public static final String ANSI_WHITE = "\033[37m";
     public static final String ANSI_RESET = "\u001B[0m";
 
+    /**
+     * wraps a string with given ANSI escape values
+     * @param string string to wrap
+     * @param color ansi escape sequence to use
+     * @return colored string!!
+     */
     public static String colorString(final String string, final String color) {
         return color + string + ANSI_RESET;
     }
